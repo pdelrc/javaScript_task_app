@@ -105,7 +105,7 @@ function getTodos() {
     if (localStorage.getItem("todos") === null) {
         todos = [];
     } else {
-        todos = JSON.parse(localStorage.get("todos"));
+        todos = JSON.parse(localStorage.getItem("todos"));
     }
     todos.forEach(function (todo) {
         //Todo DIV 
